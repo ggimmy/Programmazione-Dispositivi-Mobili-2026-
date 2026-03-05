@@ -1,4 +1,4 @@
-const val NOME = "Gianmarco" //Costante in compile-time che deve essre globale. (standard nome uppercase)
+const val NOME = "Mario" //Costante in compile-time che deve essre globale. (standard nome uppercase)
 
 
 fun main(args: Array<String>){
