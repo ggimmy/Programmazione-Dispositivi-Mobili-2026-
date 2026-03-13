@@ -10,4 +10,4 @@ Differenza fra operatore 'and' e '&&' (analogo per or,||), operatori let e run, 
 ---
 ### [Lezione 3](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/Lezioni/Lezione_3.kt)
 
-Introduzione alla programmazione ad ogetti in Kotlin.
+Introduzione alla programmazione ad oggetti in Kotlin.
