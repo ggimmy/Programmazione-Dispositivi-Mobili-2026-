@@ -328,7 +328,7 @@ class BankAccount2(
     }
 
     fun getTransactionHistory():List<String>{
-        val tmp = transactionHistory
+        val tmp = transactionHistory.toList()
         return tmp
     }
 
