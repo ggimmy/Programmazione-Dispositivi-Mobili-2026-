@@ -19,3 +19,7 @@ Costruttori primari e secondari ed il blocco ```init```. Interfacce e classi ast
 ---
 ### [Lezione 5](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/Lezioni/Lezione_5.kt)
 Proprietà degli oggetti, getter e setter custom(field), keyword ```open```, operator overloading ed extension.
+
+---
+### [Lezione 6](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/Lezioni/Lezione_6.kt)
+Extension functions avanzate, data classes, dustructuring e ```componentN()```, enums, sealed classes, singleton, companion e kotlin type hierarchy
