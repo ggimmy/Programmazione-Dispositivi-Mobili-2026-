@@ -22,4 +22,4 @@ Proprietà degli oggetti, getter e setter custom(field), keyword ```open```, ope
 
 ---
 ### [Lezione 6](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/Lezioni/Lezione_6.kt)
-Extension functions avanzate, data classes, dustructuring e ```componentN()```, enums, sealed classes, singleton, companion e kotlin type hierarchy
+Extension functions avanzate, data classes, destructuring e ```componentN()```, enums, sealed classes, singleton, companion e Kotlin type hierarchy
