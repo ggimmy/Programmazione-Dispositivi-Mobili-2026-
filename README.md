@@ -14,7 +14,7 @@ Introduzione alla programmazione ad oggetti in Kotlin.
 
 ---
 ### [Lezione 4](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/Lezioni/Lezione_4.kt)
-Costruttori primari e secondari ed il blocco ```init```. Interfacce e classi astratte. Accenni a incapsulazione e polimorfismo.
+Costruttori primari e secondari. Il blocco ```init```. Interfacce e classi astratte. Accenni a incapsulazione e polimorfismo.
 
 ---
 ### [Lezione 5](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/Lezioni/Lezione_5.kt)
