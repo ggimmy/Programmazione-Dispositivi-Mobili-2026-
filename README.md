@@ -23,3 +23,7 @@ Proprietà degli oggetti, getter e setter custom(field), keyword ```open```, ope
 ---
 ### [Lezione 6](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/Lezioni/Lezione_6.kt)
 Extension functions avanzate, data classes, destructuring e ```componentN()```, enums, sealed classes, singleton, companion e Kotlin type hierarchy
+
+---
+###[Lezione 7](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/Lezioni/Lezione_7.kt)
+Collections(lists, maps, sets ed array), range, sequenze e progessions.
