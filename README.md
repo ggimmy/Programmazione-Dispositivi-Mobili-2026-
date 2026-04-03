@@ -27,3 +27,7 @@ Extension functions avanzate, data classes, destructuring e ```componentN()```, 
 ---
 ### [Lezione 7](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/Lezioni/Lezione_7.kt)
 Collections(lists, maps, sets ed array), range, sequenze e progessions. ([homework](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/esercizi/homework_lez_7.kt))
+
+---
+### [Lezione 8](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/Lezioni/Lezione_8.kt)
+Generics, type parameters, variance e inline functions.
