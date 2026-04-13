@@ -31,3 +31,7 @@ Collections(lists, maps, sets ed array), range, sequenze e progessions. ([homewo
 ---
 ### [Lezione 8](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/blob/main/Lezioni/Lezione_8.kt)
 Generics, type parameters, variance e inline functions.
+
+---
+### Lezione 9
+Introduzione e setup dell'ambiente Android Studio
