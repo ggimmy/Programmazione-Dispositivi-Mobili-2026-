@@ -35,3 +35,7 @@ Generics, type parameters, variance e inline functions.
 ---
 ### Lezione 9
 Introduzione e setup dell'ambiente Android Studio
+
+---
+### [Lezione 10](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/tree/main/Lezioni/Lezione_10)
+Introduzione al linguaggio XML, sviluppo di un app semplice con front-end XML
