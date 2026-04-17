@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ANDROIDMANIFEST.XML - File di configurazione dell'applicazione Android
+    
+    Questo file DEVE essere presente in ogni app Android.
+    Contiene le dichiarazioni di:
+    1. Activity (schermata dell'app)
+    2. Service (componenti che girano in background)
+    3. Broadcast Receiver (ricevitori di messaggi di sistema)
+    4. Content Provider (condivisione di dati)
+    5. Permessi (accessi a risorse del sistema)
+    6. Intent Filter (come l'app può essere lanciata da altre app o dalle sue stesse Activity)
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        <application> - Elemento radice che contiene tutte le dichiarazioni dell'app
+        
+        Attributi importanti:
+        - android:allowBackup: permette il backup dei dati app
+        - android:icon: icona dell'app nel launcher
+        - android:label: nome dell'app mostrato nel launcher (@string/app_name richiama res/values/strings.xml)
+        - android:theme: tema grafico (colori, stili) dell'app
+    -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lezione_11">
+        
+        <!--
+            ACTIVITY SECONDARIA - ColorActivity
+            
+            Questa Activity NON appare nel launcher perché NON ha un <intent-filter>
+            con action MAIN e category LAUNCHER
+            
+            Può essere lanciata SOLO tramite Intent esplicito da MainActivity:
+                Intent(MainActivity.this, ColorActivity.class)
+            
+            android:exported="false":
+            - Significa che altre app NON possono lanciare questa Activity
+            - Per sicurezza, dato che è una Activity interna all'app
+            
+            Ricordiamo dalla slide 6 che:
+            "Un Intent esplicito indica in modo diretto il componente da avviare"
+            Esempio: Intent(this, ColorActivity::class.java)
+        -->
+        <activity
+            android:name=".ColorActivity"
+            android:exported="false"
+            android:label="@string/title_activity_color"
+            android:theme="@style/Theme.Lezione_11" />
+        
+        <!--
+            ACTIVITY PRINCIPALE - MainActivity
+            
+            Questa è la schermata che si apre quando l'utente clicca l'icona dell'app
+            
+            android:exported="true":
+            - Significa che altre app potrebbero lanciare questa Activity
+            - È necessario avere intent-filter pubblico
+            
+            <intent-filter> (dalla slide 18):
+            Dichiara a Android quali Intent questa Activity può ricevere
+            
+            Da slide 22 (Package manager):
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_LAUNCHER);
+            PackageManager packageManager = getPackageManager();
+            List<ResolveInfo> infoList = packageManager.queryIntentActivities(intent, 0);
+            
+            Quando il sistema cerca Activity per lanciare l'app, cerca quelle con
+            action MAIN e category LAUNCHER
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Lezione_11">
+            
+            <!--
+                INTENT FILTER - Dichiarazione di quali Intent questa Activity gestisce
+                
+                Da slide 5:
+                "Un Intent è un messaggio contenente informazioni inviate ad un altro oggetto"
+                
+                Da slide 18:
+                "Dichiarano quali intent impliciti un componente può ricevere"
+                
+                I tre elementi del filtro:
+                1. <action> - L'azione richiesta
+                2. <category> - Il contesto
+                3. <data> (opzionale) - I dati (URI e tipo MIME)
+            -->
+            <intent-filter>
+                <!--
+                    ACTION - L'azione che questa Activity gestisce
+                    
+                    Da slide 11 (Esempi azioni standard):
+                    ACTION_MAIN: significa "questa è l'Activity principale"
+                    
+                    Altre azioni comuni:
+                    - ACTION_VIEW: visualizzare i dati
+                    - ACTION_EDIT: editare i dati
+                    - ACTION_SEND: inviare dati
+                -->
+                <action android:name="android.intent.action.MAIN" />
+
+                <!--
+                    CATEGORY - Il contesto in cui questa Action può essere usata
+                    
+                    Da slide 13 (Categorie):
+                    CATEGORY_LAUNCHER: questa Activity appare nel launcher
+                    (nel menu delle app del telefono)
+                    
+                    Altre categorie comuni:
+                    - CATEGORY_DEFAULT: categoria di default
+                    - CATEGORY_BROWSABLE: può essere aperta dai browser
+                    - CATEGORY_HOME: Activity della schermata principale
+                -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
