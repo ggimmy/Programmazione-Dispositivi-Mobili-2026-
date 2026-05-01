@@ -51,3 +51,7 @@ Intent impliciti, tasks e introduzione alle risorse
 ---
 ### [Lezione 13](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/tree/main/Lezioni/Lezione_13)
 Gestione delle risorse in app. (*per appunti vedi markdown lezione 12*).
+
+---
+### [Lezione 14](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/tree/main/Lezioni/Lezione_14)
+Navigation e State in Compose.
