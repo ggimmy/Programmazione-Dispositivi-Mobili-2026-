@@ -47,3 +47,7 @@ Gestione e ciclo di vita di un activity, intents e IPC in android
 ---
 ### [Lezione 12](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/tree/main/Lezioni/Lezione_12)
 Intent impliciti, tasks e introduzione alle risorse
+
+---
+### [Lezione 13](https://github.com/ggimmy/Programmazione-Dispositivi-Mobili-2026-/tree/main/Lezioni/Lezione_13)
+Gestione delle risorse in app. (*per appunti vedi markdown lezione 12*).
